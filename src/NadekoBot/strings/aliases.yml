@@ -471,7 +471,6 @@ leaderboard:
   - lb
 trivia:
   - trivia
-  - t
 tl:
   - tl
 tq:
@@ -1215,6 +1214,8 @@ timelyset:
   - timelyset
 timely:
   - timely
+  - t
+  - daily
 timelyreset:
   - timelyreset
 crypto:

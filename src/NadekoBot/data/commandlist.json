@@ -3005,7 +3005,8 @@
     },
     {
       "Aliases": [
-        ".timely"
+        ".timely",
+        ".t"
       ],
       "Description": "Use to claim your timely currency.\nThis is usually set by the bot owners to be daily, hourly or once every 12 hours.\nBot owner has to specify the amount and the period on how often you can claim your currency.",
       "Usage": [
@@ -4497,8 +4498,7 @@
     },
     {
       "Aliases": [
-        ".trivia",
-        ".t"
+        ".trivia"
       ],
       "Description": "Starts a game of trivia.\nFirst player to get to 10 points wins by default.\n30 seconds per question.",
       "Usage": [
