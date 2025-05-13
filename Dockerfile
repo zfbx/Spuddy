@@ -28,8 +28,9 @@ FROM alpine:3.20
 WORKDIR /app
 
 # Music dependencies
-ADD --chmod=755 https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp_linux /usr/local/bin/yt-dlp
-RUN apk add --no-cache ffmpeg libsodium
+# ADD --chmod=755 https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp_linux /usr/local/bin/yt-dlp
+RUN apk add --no-cache libsodium
+# ffmpeg
 
 # Required dependencies
 # icu-libs is required for globalization

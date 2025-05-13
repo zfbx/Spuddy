@@ -1,0 +1,14 @@
+services:
+  nadeko:
+    build:
+      context: .
+    container_name: nadeko
+    restart: unless-stopped
+    environment:
+      TZ: America/New_York
+      bot_token: YOUR_TOKEN_HERE
+    volumes:
+      - nadekodata:/app/data
+networks: {}
+volumes:
+  nadekodata:

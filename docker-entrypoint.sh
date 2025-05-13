@@ -13,7 +13,7 @@ cp -n "$data_init/creds_example.yml" "$data/creds.yml"
 
 ls $data
 
-echo "Yt-dlp update"
+# echo "Yt-dlp update"
 # TODO: Update yt-dlp. It should not crash the entrypoint if ca-certificates is not installed
 # yt-dlp -U
 
