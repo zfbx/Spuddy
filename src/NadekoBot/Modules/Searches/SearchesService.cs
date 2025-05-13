@@ -18,6 +18,7 @@ public class SearchesService : INService
     }
 
     public List<WoWJoke> WowJokes { get; } = [];
+    public List<Joke> Jokes { get; } = [];
     public List<MagicItem> MagicItems { get; } = [];
     private readonly IHttpClientFactory _httpFactory;
     private readonly IGoogleApiService _google;
@@ -48,6 +49,11 @@ public class SearchesService : INService
             WowJokes = JsonConvert.DeserializeObject<List<WoWJoke>>(File.ReadAllText("data/wowjokes.json"));
         else
             Log.Warning("data/wowjokes.json is missing. WOW Jokes are not loaded");
+        
+        if (File.Exists("data/jokes.json"))
+            Jokes = JsonConvert.DeserializeObject<List<Joke>>(File.ReadAllText("data/jokes.json"));
+        else
+            Log.Warning("data/jokes.json is missing. Jokes are not loaded");
 
         if (File.Exists("data/magicitems.json"))
             MagicItems = JsonConvert.DeserializeObject<List<MagicItem>>(File.ReadAllText("data/magicitems.json"));

@@ -37,6 +37,19 @@ public partial class Searches
         }
 
         [Cmd]
+        public async Task Joke()
+        {
+            if (!_service.Jokes.Any())
+            {
+                await Response().Error(strs.jokes_not_loaded).SendAsync();
+                return;
+            }
+
+            var joke = _service.Jokes[new NadekoRandom().Next(0, _service.Jokes.Count)];
+            await Response().Confirm(joke.Question, joke.Answer).SendAsync();
+        }
+
+        [Cmd]
         public async Task MagicItem()
         {
             if (!_service.MagicItems.Any())

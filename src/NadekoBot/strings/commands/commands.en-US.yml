@@ -1994,6 +1994,12 @@ wowjoke:
     - ''
   params:
     - { }
+joke:
+  desc: Get a random potato joke.
+  ex:
+    - ''
+  params:
+    - { }
 calculate:
   desc: Evaluate a mathematical expression.
   ex:

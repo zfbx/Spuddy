@@ -6430,6 +6430,19 @@
     },
     {
       "Aliases": [
+        ".joke"
+      ],
+      "Description": "Get a random potato joke.",
+      "Usage": [
+        ".joke"
+      ],
+      "Submodule": "JokeCommands",
+      "Module": "Searches",
+      "Options": null,
+      "Requirements": []
+    },
+    {
+      "Aliases": [
         ".magicitem",
         ".mi"
       ],

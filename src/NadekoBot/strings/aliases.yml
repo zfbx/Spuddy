@@ -169,7 +169,6 @@ roleicon:
   - roleicon
 ban:
   - ban
-  - b
 softban:
   - softban
   - sb
@@ -484,8 +483,11 @@ typestop:
 typeadd:
   - typeadd
 pick:
+  - take
   - pick
+  - grab
 plant:
+  - place
   - plant
 gencurrency:
   - gencurrency
@@ -635,6 +637,8 @@ convertlist:
   - convertlist
 wowjoke:
   - wowjoke
+joke:
+  - joke
 calculate:
   - calculate
   - calc
@@ -1377,7 +1381,6 @@ bankbalance:
   - b
   - bal
 banktake:
-  - take
   - seize
 bankaward:
   - award
