@@ -3,17 +3,17 @@ version: 13
 # Currency settings
 currency:
   # What is the emoji/character which represents the currency
-  sign: "🌸"
+  sign: "🍟"
   # What is the name of the currency
-  name: Nadeko Flower
+  name: Fries
   # For how long (in days) will the transactions be kept in the database (curtrs)
   # Set 0 to disable cleanup (keep transactions forever)
-  transactionsLifetime: 0
+  transactionsLifetime: 30
 # Minimum amount users can bet (>=0)
 minBet: 0
 # Maximum amount users can bet
 # Set 0 for unlimited
-maxBet: 0
+maxBet: 1000000
 # Settings for betflip command
 betFlip:
   # Bet multiplier if user guesses correctly
@@ -43,22 +43,22 @@ generation:
   # How many seconds have to pass for the next message to have a chance to spawn currency
   genCooldown: 10
   # Minimum amount of currency that can spawn
-  minAmount: 1
+  minAmount: 1000
   # Maximum amount of currency that can spawn.
   # Set to the same value as MinAmount to always spawn the same amount
-  maxAmount: 1
+  maxAmount: 5000
 # Settings for timely command
 # (letting people claim X amount of currency every Y hours)
 timely:
   # How much currency will the users get every time they run .timely command
   # setting to 0 or less will disable this feature
-  amount: 120
+  amount: 1000
   # How often (in hours) can users claim currency with .timely command
   # setting to 0 or less will disable this feature
-  cooldown: 12
+  cooldown: 6
   # How will timely be protected?
   # None, Button (users have to click the button) or Captcha (users have to type the captcha from an image)
-  protType: Captcha
+  protType: None
 # How much will each user's owned currency decay over time.
 decay:
   # Percentage of user's current currency which will be deducted every 24h.
@@ -77,7 +77,7 @@ botCuts:
   # The rest goes to the user who posted the item/role/whatever to the shop.
   # This is a good way to reduce the amount of currency in circulation therefore keeping the inflation in check.
   # Default 0.1 (10%).
-  shopSaleCut: 0.1
+  shopSaleCut: 1
 # Settings for LuckyLadder command
 luckyLadder:
   # Self-Explanatory. Has to have 8 values, otherwise the command won't work.
@@ -284,6 +284,7 @@ slots:
 boostBonus:
   # Users will receive a bonus if they boost any of these servers
   guildIds:
-    - 117523346618318850
+    - 1037846414006435981
+    - 354143016996569089
   # This bonus will be added before any other multiplier is applied to the .timely command
-  baseTimelyBonus: 50
+  baseTimelyBonus: 4000

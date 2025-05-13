@@ -176,7 +176,7 @@ public partial class Games
                                 Origin = new(startX + 50, startY + 80)
                             },
                             // "", Brushes.Solid(SixLabors.ImageSharp.Color.White), outlinePen);
-                            pix.Price + "🌸",
+                            pix.Price + "🍟",
                             // CurrencyHelper.N(pix.Price, Culture, _gcs.Data.Currency.Sign),
                             Brushes.Solid(SixLabors.ImageSharp.Color.White),
                             outlinePen);

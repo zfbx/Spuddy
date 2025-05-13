@@ -5,7 +5,7 @@ textXpPerMessage: 3
 # How often can the users receive XP, in seconds
 textXpCooldown: 300
 # Amount of xp users gain from posting an image
-textXpFromImage: 3
+textXpFromImage: 9
 # Average amount of xp earned per minute in VC
 voiceXpPerMinute: 3
 # Xp Shop config

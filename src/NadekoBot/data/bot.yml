@@ -17,9 +17,9 @@ color:
 defaultLocale: en-US
 # Style in which executed commands will show up in the logs.
 # Allowed values: Simple, Normal, None
-consoleOutputType: Normal
+consoleOutputType: Simple
 # Whether the bot will check for new releases every hour
-checkForUpdates: true
+checkForUpdates: false
 # Do you want any messages sent by users in Bot's DM to be forwarded to the owner(s)?
 forwardMessages: false
 # Do you want the message to be forwarded only to the first owner specified in the list of owners (in creds.yml),
@@ -27,7 +27,7 @@ forwardMessages: false
 forwardToAllOwners: false
 # Any messages sent by users in Bot's DM to be forwarded to the specified channel.
 # This option will only work when ForwardToAllOwners is set to false
-forwardToChannel: 
+forwardToChannel: 1371725507791687741
 # Should the bot ignore messages from other bots?
 # Settings this to false might get your bot banned if it gets into a spam loop with another bot.
 # This will only affect command executions, other features will still block bots from access.
@@ -50,10 +50,9 @@ dmHelpTextKeywords:
 # This is the response for the .h command
 helpText: |-
   {
-    "title": "To invite me to your server, use this link",
+    "title": "Bot Help",
     "description": "https://discordapp.com/oauth2/authorize?client_id={0}&scope=bot&permissions=66186303",
-    "color": 53380,
-    "thumbnail": "https://i.imgur.com/nKYyqMK.png",
+    "color": 15841120,
     "fields": [
       {
         "name": "Useful help commands",
@@ -66,11 +65,6 @@ helpText: |-
         "name": "List of all Commands",
         "value": "https://nadeko.bot/commands",
         "inline": false
-      },
-      {
-        "name": "Nadeko Support Server",
-        "value": "https://discord.nadeko.bot/ ",
-        "inline": true
       }
     ]
   }
@@ -87,4 +81,4 @@ prefix: .
 # Whether the bot will rotate through all specified statuses.
 # This setting can be changed via .ropl command.
 # See RotatingStatuses submodule in Administration.
-rotateStatuses: false
+rotateStatuses: true

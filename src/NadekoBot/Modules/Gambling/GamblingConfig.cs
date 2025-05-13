@@ -105,7 +105,7 @@ public sealed partial class GamblingConfig : ICloneable<GamblingConfig>
 public class CurrencyConfig
 {
     [Comment("""What is the emoji/character which represents the currency""")]
-    public string Sign { get; set; } = "🌸";
+    public string Sign { get; set; } = "🍟";
 
     [Comment("""What is the name of the currency""")]
     public string Name { get; set; } = "Nadeko Flower";

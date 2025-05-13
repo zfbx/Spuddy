@@ -20,7 +20,7 @@ public sealed class CaptchaService(FontProvider fonts, IBotCache cache, IPatrona
         var img = new Image<Rgba32>(60, 34);
 
         var font = fonts.NotoSans.CreateFont(22);
-        var outlinePen = new SolidPen(Color.Black, 0.5f);
+        var outlinePen = new SolidPen(Color.FromRgb(20, 20 ,20), 0.5f);
         var strikeoutRun = new RichTextRun
         {
             Start = 0,
