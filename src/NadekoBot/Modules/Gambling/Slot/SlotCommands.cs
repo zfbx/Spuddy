@@ -180,12 +180,12 @@ public partial class Gambling
 
             Color fontColor = Config.Slots.CurrencyFontColor;
 
-            bgImage.Mutate<Rgba32>(x => x.DrawText(new RichTextOptions(_fonts.NotoSans.CreateFont(35))
+            bgImage.Mutate<Rgba32>(x => x.DrawText(new RichTextOptions(_fonts.NotoSans.CreateFont(26))
                 {
                     HorizontalAlignment = HorizontalAlignment.Center,
                     VerticalAlignment = VerticalAlignment.Center,
                     WrappingLength = 140,
-                    Origin = new(295, 100)
+                    Origin = new(280, 185)
                 },
                 ((long)result.Won).ToString(),
                 fontColor));
@@ -197,7 +197,7 @@ public partial class Gambling
                     HorizontalAlignment = HorizontalAlignment.Center,
                     VerticalAlignment = VerticalAlignment.Center,
                     WrappingLength = 135,
-                    Origin = new(196, 479)
+                    Origin = new(170, 436)
                 },
                 amount.ToString(),
                 fontColor));
@@ -206,7 +206,7 @@ public partial class Gambling
                 {
                     HorizontalAlignment = HorizontalAlignment.Center,
                     VerticalAlignment = VerticalAlignment.Center,
-                    Origin = new(393, 480)
+                    Origin = new(380, 436)
                 },
                 ownedAmount.ToString(),
                 fontColor));
@@ -215,7 +215,7 @@ public partial class Gambling
             for (var i = 0; i < 3; i++)
             {
                 using var img = Image.Load(await _images.GetSlotEmojiAsync(numbers[i]));
-                bgImage.Mutate(x => x.DrawImage(img, new Point(148 + (105 * i), 217), 1f));
+                bgImage.Mutate(x => x.DrawImage(img, new Point(138 + (106 * i), 228), 1f));
             }
 
             return bgImage;

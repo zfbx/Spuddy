@@ -93,7 +93,7 @@ luckyLadder:
 # Settings related to waifus
 waifu:
   # Minimum price a waifu can have
-  minPrice: 50
+  minPrice: 50000
   multipliers:
     # Multiplier for waifureset. Default 150.
     # Formula (at the time of writing this):
@@ -279,7 +279,7 @@ votePlatforms:
 # Slot config
 slots:
   # Hex value of the color which the numbers on the slot image will have.
-  currencyFontColor: ff0000
+  currencyFontColor: f7f930
 # Bonus config for server boosts
 boostBonus:
   # Users will receive a bonus if they boost any of these servers

@@ -2,13 +2,11 @@
 version: 10
 coins:
   heads:
-    - https://cdn.nadeko.bot/coins/heads3.png
+    - https://cdn.bunny.cc/spuddy/coin-heads.png
   tails:
-    - https://cdn.nadeko.bot/coins/tails3.png
+    - https://cdn.bunny.cc/spuddy/coin-tails.png
 currency:
-  - https://cdn.nadeko.bot/other/currency/0.jpg
-  - https://cdn.nadeko.bot/other/currency/1.jpg
-  - https://cdn.nadeko.bot/other/currency/2.jpg
+  - https://cdn.bunny.cc/spuddy/rainingfries.png
 dice:
   - https://cdn.nadeko.bot/other/dice/0.png
   - https://cdn.nadeko.bot/other/dice/1.png
@@ -21,14 +19,14 @@ dice:
   - https://cdn.nadeko.bot/other/dice/8.png
   - https://cdn.nadeko.bot/other/dice/9.png
 xp:
-  bg: https://cdn.nadeko.bot/other/xp/bg6_mini.png
+  bg: https://cdn.bunny.cc/spuddy/bg6_mini.png
 slots:
   emojis:
-    - https://cdn.nadeko.bot/slots/10.png
-    - https://cdn.nadeko.bot/slots/11.png
-    - https://cdn.nadeko.bot/slots/12.png
-    - https://cdn.nadeko.bot/slots/13.png
-    - https://cdn.nadeko.bot/slots/14.png
-    - https://cdn.nadeko.bot/slots/15.png
-    - https://cdn.nadeko.bot/slots/16.png
-  bg: https://cdn.nadeko.bot/slots/slots_bg.png
+    - https://cdn.bunny.cc/spuddy/slot0.png
+    - https://cdn.bunny.cc/spuddy/slot1.png
+    - https://cdn.bunny.cc/spuddy/slot2.png
+    - https://cdn.bunny.cc/spuddy/slot3.png
+    - https://cdn.bunny.cc/spuddy/slot4.png
+    - https://cdn.bunny.cc/spuddy/slot5.png
+    - https://cdn.bunny.cc/spuddy/slot6.png
+  bg: https://cdn.bunny.cc/spuddy/slots_bg.png
