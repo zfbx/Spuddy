@@ -11,6 +11,8 @@ using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.Drawing.Processing;
 using SixLabors.ImageSharp.PixelFormats;
 using SixLabors.ImageSharp.Processing;
+using System;
+using System.Text;
 using Color = SixLabors.ImageSharp.Color;
 using Image = SixLabors.ImageSharp.Image;
 
@@ -201,15 +203,15 @@ public class PlantPickService(
                     if (dropAmount > 0)
                     {
                         var prefix = cmdHandler.GetPrefix(channel.Guild.Id);
+                        var pw = config.Generation.HasPassword ? gs.GeneratePassword().ToUpperInvariant() : null;
                         var toSend = dropAmount == 1
                             ? GetText(channel.GuildId, strs.curgen_sn(config.Currency.Sign))
                               + " "
-                              + GetText(channel.GuildId, strs.pick_sn(prefix))
+                              + GetText(channel.GuildId, strs.pick_sn(prefix, InsertRandomZeroWidthSpaces(pw)))
                             : GetText(channel.GuildId, strs.curgen_pl(dropAmount, config.Currency.Sign))
                               + " "
-                              + GetText(channel.GuildId, strs.pick_pl(prefix));
+                              + GetText(channel.GuildId, strs.pick_pl(prefix, InsertRandomZeroWidthSpaces(pw)));
 
-                        var pw = config.Generation.HasPassword ? gs.GeneratePassword().ToUpperInvariant() : null;
 
                         IUserMessage sent;
                         var (stream, ext) = await GetRandomCurrencyImageAsync(pw);
@@ -237,6 +239,22 @@ public class PlantPickService(
             }
         });
         return Task.CompletedTask;
+    }
+
+    public string InsertRandomZeroWidthSpaces(string input) {
+        if (input == null) { input = string.Empty; }
+        Random random = new Random();
+        StringBuilder result = new StringBuilder();
+
+        foreach (char c in input) {
+            result.Append(c);
+
+            int spacesToAdd = random.Next(1, 4); // Random number between 1 and 3
+            for (int i = 0; i < spacesToAdd; i++) {
+                result.Append("\u200B");
+            }
+        }
+        return result.ToString();
     }
 
     public async Task<long> PickAsync(
@@ -303,9 +321,9 @@ public class PlantPickService(
             var msgToSend = GetText(gid, strs.planted(Format.Bold(user), amount + gss.Data.Currency.Sign));
 
             if (amount > 1)
-                msgToSend += " " + GetText(gid, strs.pick_pl(prefix));
+                msgToSend += " " + GetText(gid, strs.pick_pl(prefix, InsertRandomZeroWidthSpaces(pass)));
             else
-                msgToSend += " " + GetText(gid, strs.pick_sn(prefix));
+                msgToSend += " " + GetText(gid, strs.pick_sn(prefix, InsertRandomZeroWidthSpaces(pass)));
 
             //get the image
             var (stream, ext) = await GetRandomCurrencyImageAsync(pass);
