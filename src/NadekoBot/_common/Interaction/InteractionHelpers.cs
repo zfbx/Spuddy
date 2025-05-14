@@ -2,6 +2,6 @@
 
 public static class InteractionHelpers
 {
-    public static readonly IEmote ArrowLeft = Emote.Parse("<:x:1232256519844790302>");
-    public static readonly IEmote ArrowRight = Emote.Parse("<:x:1232256515298295838>");
+    public static readonly IEmote ArrowLeft = Emote.Parse("<:left:1372151969250279474>");
+    public static readonly IEmote ArrowRight = Emote.Parse("<:right:1372151979769331792>");
 }

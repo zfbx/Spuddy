@@ -1,19 +1,19 @@
 # DO NOT CHANGE
 version: 11
 weatherSeed: w%29';^eGE)9oWHM(aI9I;%1[.r^z2ZS7ShV,l')o(e%#"hVzb>oxQq^`.&/7srh
-requireCaptcha: true
+requireCaptcha: false
 starEmojis:
-  - <:emptystar:1326838565786877962>
-  - <:onestar:1326838456739168361>
-  - <:twostar:1326838508198957107>
-  - <:threestar:1326838525601251429>
-  - <:fourstar:1326838552520294462>
+  - <:emptystar:1372148989293756477>
+  - <:onestar:1372149004262965399>
+  - <:twostar:1372149021568794654>
+  - <:threestar:1372149055206981653>
+  - <:fourstar:1372149070977564744>
 spotEmojis:
-  - <:ocean:1328519734953771120>
-  - <:river:1328519754620862504>
-  - <:lake:1328315260561788989>
-  - <:swamp:1328519766083633224>
-  - <:reef:1328519744646545421>
+  - <:ocean:1372148912722411551>
+  - <:river:1372148955739062282>
+  - <:lake:1372148888068427787>
+  - <:swamp:1372148966875074624>
+  - <:reef:1372148930590150769>
 chance:
   fish: 80
   trash: 15
@@ -29,7 +29,7 @@ fish:
     fluff: Very common.
     condition: 
     image: https://cdn.nadeko.bot/fish/bass.png
-    emoji: <:bass:1328520376892002386>
+    emoji: <:bass:1372149109716422717>
 trash:
   - id: 1002
     name: Plastic Bag
@@ -41,7 +41,7 @@ trash:
     fluff: Trophy of your contribution to the environment.
     condition: 
     image: https://cdn.nadeko.bot/fish/plasticbag.png
-    emoji: <:plasticbag:1328520895454515211>
+    emoji: <:plasticbag:1372149120881397811>
 items:
 - id: 1
   itemType: Pole

@@ -259,7 +259,7 @@ public class GamblingService : INService, IReadyExecutor
         {
             if (percentBonus > float.Epsilon)
                 msg +=
-                    $"✅ *+{percentBonus:P0} bonus for the [Patreon](https://patreon.com/nadekobot) pledge! <:hart:746995901758832712>*\n";
+                    $"✅ *+{percentBonus:P0} bonus for the [Patreon](https://patreon.com/nadekobot) pledge!*\n";
             else
                 msg += $"❌ *+0 bonus for the [Patreon](https://patreon.com/nadekobot) pledge*\n";
         }
